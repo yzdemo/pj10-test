@@ -1,3 +1,4 @@
+**Date**: 2026/01/12  
 **Project**: Syllabus to Calendar  
 **Mentor**: Self Mentored :)  
 **Meeting Time**: lect02  
