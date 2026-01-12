@@ -17,8 +17,13 @@ Members:
 Scrum Discussion:
 Decided general project roles for members.
 -Lucy: Design/UX/NLP/Event Creation
+
 -Matthew: NLP/Event Creation
+
 -Wilson: Preference System/File Uploading/Calendar Integration
+
 -Nataly: Assets/App Creation/App Access/File Uploading
+
 -Rocky: File Uploading/Calendar Integration
+
 -Timothy: Document Parsing/NLP/Event Creation
