@@ -1,7 +1,7 @@
 Attendance: all were present 
--Lucy 
--Matthew 
--Natalie 
--Rocky 
--Timothy 
+-Lucy  
+-Matthew  
+-Natalie  
+-Rocky  
+-Timothy  
 
