@@ -12,3 +12,4 @@ Web app that extracts important dates from syllabi and adds them to Google Calen
 | Nataly Gonzalez Ornelas | n-ornelas |
 | Lucy Deng | DengLucy |
 | Timothy Lou | TimatoPaste |
+| Saeed Arellano | saeed-ar |
