@@ -3,4 +3,5 @@ Need: User is frustrated with disorganized syllabuses and wants a way to organiz
 
 User Journey:  
 As a user, I can upload syllabus pdfs from which information is transferred to my calendar.  
-As a user, I can edit my preferences for only certain information (Lectures, sections, tests, assignements, etc) I want transferred to my calendar.  
+As a user, I can edit my preferences for only certain information (Lectures, sections, tests, assignements, etc) I want transferred to my calendar.
+I get notified if there is any ambiguity in the syllabi that the website was not able to convert so that I can choose what to do with only those parts.
