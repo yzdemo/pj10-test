@@ -4,7 +4,7 @@
 Web app that extracts important dates from syllabi and adds them to Google Calendar
 
 # Tech Stack:
-* Vercel, React, Next.js, ?backend?
+* Vercel, React, Next.js, Gemeni
 
 # Members:
 | Name | Github ID |
