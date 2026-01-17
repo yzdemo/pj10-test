@@ -8,7 +8,7 @@ Meeting Time: lab02
 
 Type of meeting: Daily Scrum
 
-Team: Timothy [ ] , Rocky [ ] , Nataly [ ], Lucy [ ], Wilson [ ], Matthew [ ]
+Team: Timothy [ ] , Rocky [ ] , Nataly [ ], Lucy [ ], Wilson [ ], Matthew [ ], Saeed [ ]
 
 Scribed Discussion (Scrum):
 
