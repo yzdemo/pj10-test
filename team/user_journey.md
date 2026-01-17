@@ -11,3 +11,4 @@ User Journey:
 | student | select specific information (lectures, sections, tests, assignments, etc) to be transferred to my calendar | my calendar only has the information I want/need |
 | student | be notified if the website cannot process specific sections of the syllabi | I can add information myself |
 | student | be able to manually add information to sections I was notified about before the website creates the calendar events | none of the information I want from the syllabi is missing |
+| student | have information from my uploaded syllabi available in my calendar | I can keep my academic life organized |
