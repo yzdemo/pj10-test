@@ -13,3 +13,5 @@ Team: Timothy [ ] , Rocky [ ] , Nataly [ ], Lucy [ ], Wilson [ ], Matthew [ ], S
 # Scrum Discussion:
 
 # Sprint Discussion:
+| What | How |
+|------|-----|
