@@ -4,3 +4,5 @@
 - UI + UX
 - Next.js
 - Vercel
+- Gemini API
+- Google Calendar API
