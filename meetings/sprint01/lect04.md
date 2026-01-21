@@ -6,6 +6,6 @@ Type of meeting: Daily Scrum + Biweekly Sprint
 Team: Timothy [ ] , Rocky [ ] , Nataly [ ], Lucy [ ], Wilson [ ], Matthew [ ], Saeed [ ]
 
 
-#Scrum Discussion:
+Scrum Discussion:
 
-#Sprint Discussion:
+Sprint Discussion:
