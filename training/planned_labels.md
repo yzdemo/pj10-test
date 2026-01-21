@@ -1,3 +1,3 @@
--Homework
--Lectures
--Tests
+- Homework
+- Lectures
+- Tests
