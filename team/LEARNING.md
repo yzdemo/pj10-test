@@ -1,0 +1,8 @@
+- unpdf (https://www.npmjs.com/package/unpdf)
+- natural lib (https://naturalnode.github.io/natural/) NLP + other libraries for comparison
+- upload pdf and different file extensions and access from backend 
+- UI + UX
+- Next.js
+- Vercel
+- Gemini API
+- Google Calendar API
