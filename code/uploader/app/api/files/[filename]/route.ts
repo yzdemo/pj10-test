@@ -23,9 +23,9 @@ const storage = new FileStorage();
  * @param params - Route parameters containing filename
  * @returns NextResponse with file content or error
  */
-export async function GET(request: NextRequest, { params }: { params: { filename: string } }): Promise<NextResponse> {
+export async function GET(request: NextRequest, { params }: { params: Promise<{ filename: string }> }): Promise<NextResponse> {
   try {
-    const { filename } = params;
+    const { filename } = await params;
     const filepath = storage.getFilePath(filename);
 
     const fileBuffer = await readFile(filepath);
@@ -63,9 +63,9 @@ export async function GET(request: NextRequest, { params }: { params: { filename
  * @param params - Route parameters containing filename
  * @returns NextResponse with success or error message
  */
-export async function DELETE(request: NextRequest, { params }: { params: { filename: string } }): Promise<NextResponse> {
+export async function DELETE(request: NextRequest, { params }: { params: Promise<{ filename: string }> }): Promise<NextResponse> {
   try {
-    const { filename } = params;
+    const { filename } = await params;
     const deleted = await storage.deleteFile(filename);
 
     if (deleted) {
