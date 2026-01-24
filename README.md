@@ -1,13 +1,11 @@
-# Project: Syllabus To Calendar
-
-# Description:
+# Syllabus To Calendar
 
 Web app where users can recieve a complete class calendar by providing their syllabus. Users only need to provide files, press on a button, and import a file into their calendar. The app provides customization through filters and user prompts to generate calendars that meet the user's needs. For example, they can include lectures but not homework deadlines. It also incorporates validation steps such as event review which allow user to review and make changes with convenience. Furthermore, the app is designed to provide comparable accuracy and customization to manually written calendars without the same time investment. 
 
-# Tech Stack:
+## Tech Stack
 * Vercel, React, Next.js, Gemini, pdf-parse, winkNLP, Python
 
-# Members:
+## Members
 | Name | Github ID |
 |------|-----------|
 | Matthew | yzdemo | 
@@ -18,11 +16,11 @@ Web app where users can recieve a complete class calendar by providing their syl
 | Timothy Lou | TimatoPaste |
 | Saeed Arellano | saeed-ar |
 
-# User Roles:
+## User Role(s) & Permissions
 
 ### Student
   
-**Permissions:**
+#### Permissions
 
 - Uploading (PDF, Text, PNG)
 - Calendar Generation
