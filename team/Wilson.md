@@ -1,0 +1,1 @@
+Hi I'm Wilson, a 4th year Computer Science student at UCSB. My idea for this application is a website that enables users to upload their syllabus information using pdfs/docs to automatically generate events on calendar. 
