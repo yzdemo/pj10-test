@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-
-  # Syllabus to Calendar App
+# Syllabus to Calendar App
 
   This is a code bundle for Syllabus to Calendar App. The original project is available at https://www.figma.com/design/DgMiIzFMejBtVBljQArVaA/Syllabus-to-Calendar-App.
 
@@ -10,7 +8,6 @@
 
   Run `npm run dev` to start the development server.
   
-=======
 # Syllabus To Calendar
 
 Web app where users can recieve a complete class calendar by providing their syllabus. Users only need to provide files, press on a button, and import a file into their calendar. The app provides customization through filters and user prompts to generate calendars that meet the user's needs. For example, they can include lectures but not homework deadlines. It also incorporates validation steps such as event review which allow user to review and make changes with convenience. Furthermore, the app is designed to provide comparable accuracy and customization to manually written calendars without the same time investment. 
@@ -42,4 +39,3 @@ Web app where users can recieve a complete class calendar by providing their syl
 - File Downloading (CSV)
 
 Student user can only access the calendar process for themselves. They will not be able to control, nor be able to access, the calendar process for other student users.
->>>>>>> 79b9a9d5973a7e49d2574ec17a673dc53321a989
