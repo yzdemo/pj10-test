@@ -2,8 +2,12 @@
 
 Gain knowledge of usage and applications of the following:
 
-- unpdf (https://www.npmjs.com/package/unpdf)
-- Natural lib (https://naturalnode.github.io/natural/) NLP + other libraries for comparison
+- ~~unpdf (https://www.npmjs.com/package/unpdf)~~
+- ~~Natural lib (https://naturalnode.github.io/natural/) NLP + other libraries for comparison~~
+- pymupdf
+- SpaCy NLP lib
+- Backend server hosting
+- HTTP requests
 - Uploading PDF (and other files), accessing from back-end 
 - UI + UX
 - Next.js
