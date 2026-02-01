@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import PdfUpload from "../../components/PdfUpload";
 import Navbar from "../../components/navbar";
@@ -29,7 +29,7 @@ const SAMPLE_EVENTS: CalendarEvent[] = [
   },
 ];
 
-export default function UploadPage() {
+function UploadPageContent() {
   const [events, setEvents] = useState<CalendarEvent[]>([]);
   const [calendarStatus, setCalendarStatus] = useState<"idle" | "loading" | "ok" | "error">("idle");
   const [calendarMessage, setCalendarMessage] = useState("");
@@ -255,5 +255,22 @@ export default function UploadPage() {
         </div>
       </div>
     </main>
+  );
+}
+
+export default function UploadPage() {
+  return (
+    <Suspense fallback={
+      <main className="min-h-screen flex items-center justify-center">
+        <div className="max-w-md w-full p-6">
+          <h1 className="text-2xl font-semibold mb-4 text-center">
+            Upload your PDF
+          </h1>
+          <p className="text-gray-600 text-center">Loading...</p>
+        </div>
+      </main>
+    }>
+      <UploadPageContent />
+    </Suspense>
   );
 }
