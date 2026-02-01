@@ -161,7 +161,7 @@ export function errorResponse(error: unknown): NextResponse {
     responseBody.details = errorData.details;
   }
 
-  if (isDevelopment && errorData.stack) {
+  if (isDevelopment && 'stack' in errorData) {
     responseBody.stack = errorData.stack;
   }
 
@@ -193,4 +193,5 @@ export function withErrorHandling<T extends any[]>(
       return errorResponse(error);
     }
   };
+
 }
