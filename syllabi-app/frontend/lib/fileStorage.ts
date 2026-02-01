@@ -2,13 +2,14 @@ import { writeFile, mkdir, readdir, unlink, stat } from 'fs/promises';
 import path from 'path';
 import { UploadedFileInfo } from '@/types/upload';
 
-const UPLOAD_DIR = process.env.UPLOAD_DIR || 'uploads';
+// const UPLOAD_DIR = process.env.UPLOAD_DIR || 'uploads';
+const UPLOAD_DIR = process.env.VERCEL ? '/tmp/uploads' : (process.env.UPLOAD_DIR || 'uploads');
 
 export class FileStorage {
   private uploadPath: string;
 
   constructor() {
-    this.uploadPath = path.join(process.cwd(), UPLOAD_DIR);
+    this.uploadPath = UPLOAD_DIR;
   }
 
   /**
@@ -212,4 +213,5 @@ export class FileStorage {
 
     return totalSize;
   }
+
 }
