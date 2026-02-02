@@ -125,12 +125,22 @@ function UploadPageContent() {
         }),
       });
 
-      const data = await res.json();
+      let data;
+      try {
+        data = await res.json();
+      } catch (jsonError) {
+        console.error("Failed to parse response:", jsonError);
+        setCalendarStatus("error");
+        setCalendarMessage(`Server error: Invalid response (${res.status})`);
+        return;
+      }
       console.log("Calendar API response:", data);
 
       if (!res.ok) {
         setCalendarStatus("error");
-        setCalendarMessage(data.error || "Failed to add events to Google Calendar");
+        const errorMsg = data.error || `Failed to add events (${res.status})`;
+        setCalendarMessage(errorMsg);
+        console.error("Calendar API error:", data);
         return;
       }
 
@@ -139,7 +149,8 @@ function UploadPageContent() {
     } catch (err) {
       console.error("Error adding events:", err);
       setCalendarStatus("error");
-      setCalendarMessage("Failed to add events to Google Calendar");
+      const errorMsg = err instanceof Error ? err.message : "Failed to add events to Google Calendar";
+      setCalendarMessage(`Error: ${errorMsg}. Check console for details.`);
     }
   }
 
