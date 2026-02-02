@@ -55,12 +55,14 @@ export default function PdfUpload() {
     setLoading(false);
     if (res.ok) {
       
-      // const obj = await res.json();
-      // const uploadedFiles = obj.uploadedFiles;
+      const obj = await res.json();
+      const uploadedFiles = obj.uploadedFiles;
       // var allText = "";
-      // for(var i = 0; i < uploadedFiles.length; i++){
-      //   allText = allText + await getPdfTextFromURL(uploadedFiles[0].url);
-      // }
+      for(var i = 0; i < uploadedFiles.length; i++){
+        // allText = allText + await getPdfTextFromURL(uploadedFiles[0].url);
+        console.log(uploadedFiles[i].url);
+        console.log("\n");
+      }
       console.log("ran!!!!!!");
       setMessage("✅ You've completed an upload!");
       // setMessage(allText);
