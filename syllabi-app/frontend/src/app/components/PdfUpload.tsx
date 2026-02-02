@@ -43,10 +43,9 @@ export default function PdfUpload() {
       const text = await getPdfText(file);
       const obj = await res.json();
       const uploadedFiles = obj.uploadedFiles;
-      console.log(uploadedFiles[0].pathname)
-      console.log(obj)
+      console.log(uploadedFiles[0].url)
 
-      // setMessage("✅ You've completed an upload!");
+      setMessage("✅ You've completed an upload!");
     } else {
       setMessage("❌ Upload failed.");
     }
