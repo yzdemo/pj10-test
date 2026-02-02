@@ -41,10 +41,11 @@ export default function PdfUpload() {
     setLoading(false);
     if (res.ok) {
       const text = await getPdfText(file);
-      // console.log(text);
-      // setMessage(text); //!THE TEXT OBJECT HERE HAS THE STRING
       const obj = await res.json();
-      setMessage(obj.stringify());
+      const uploadedFiles = obj.uploadedFiles;
+      console.log(uploadedFiles[0].pathname)
+      console.log(obj)
+
       // setMessage("✅ You've completed an upload!");
     } else {
       setMessage("❌ Upload failed.");
