@@ -10,7 +10,7 @@ export default function UploadPage() {
         </h1>
 
         <p className="text-gray-600 text-center mb-6">
-          Please upload a PDF file to continue.
+          Please upload a PDF file to continue. Test
         </p>
 
         <PdfUpload />
