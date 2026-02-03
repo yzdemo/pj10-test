@@ -1,0 +1,36 @@
+import { getPdfTextFromFile, getPdfTextFromURL } from "./components/PdfUpload.tsx";
+
+interface UploadedFile {
+  filename: File;
+  url: string;
+}
+
+export async function generateCSVfromSyllabi(uploadedFiles: UploadedFile[]) {
+  let allText = "";
+
+  for (let i = 0; i < uploadedFiles.length; i++) {
+    const syllabus = uploadedFiles[i];
+
+    let text = "";
+    if (syllabus.filename instanceof File) {
+      text = await getPdfTextFromFile(syllabus.filename);
+    } else if (syllabus.url) {
+      text = await getPdfTextFromURL(syllabus.url);
+    }
+    allText += text + "\n\n";
+  }
+
+  const geminiResult = await fetch("/api/gemini", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ allText }),
+  });
+
+  if (!geminiResult.ok) {
+    throw new Error("Gemini generation failed.");
+  }
+
+  const { csv } = await geminiResult.json();
+
+  return csv; 
+}
