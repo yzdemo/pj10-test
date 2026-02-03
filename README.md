@@ -2,8 +2,7 @@
 
   This is a code bundle for Syllabus to Calendar App. The original project is available at https://www.figma.com/design/DgMiIzFMejBtVBljQArVaA/Syllabus-to-Calendar-App.
   
-  TODO: Current workign deployment on Vercel deriving from `main` branch. Uploader fails curiously even though it has been working locally for everyone. https://pj10-syllabus-to-cal-3pm-zwcz.vercel.app/
-
+  Current working deployment on Vercel deriving from `main` branch. https://syllabitocal.vercel.app 
   ## Running the code
 
   Run `npm i` to install the dependencies.
