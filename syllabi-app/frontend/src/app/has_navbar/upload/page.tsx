@@ -71,12 +71,14 @@ function UploadPageContent() {
 
       if (!res.ok) {
         const errorData = await res.json();
-        setCalendarMessage(`❌ ${errorData.error || "Failed to process syllabus"}`);
+        setCalendarMessage(`${errorData.error || "Syllabus Processing Failed"}`);
         return;
       }
 
       const { csvText } = await res.json();
-
+      
+      console.log(csvText)
+      
       const eventsFromCsv: CalendarEvent[] = csvText
         .split("\n")
         .filter((line) => line.trim() !== "")
@@ -86,7 +88,7 @@ function UploadPageContent() {
           return {
             title,
             start,
-            allDay: allDayStr.toLowerCase() === "true",
+            allDay: allDayStr?.toLowerCase() === "true" || false,
             description,
             location,
           } as CalendarEvent;
@@ -95,11 +97,11 @@ function UploadPageContent() {
       setEvents(eventsFromCsv);
       localStorage.setItem("calendarEvents", JSON.stringify(eventsFromCsv));
       setCalendarMessage(
-        `✅ Successfully processed syllabus! ${eventsFromCsv.length} event(s) loaded.`
+        `Syllabus succesfully processed, ${eventsFromCsv.length} event(s) loaded.`
       );
     } catch (err) {
       console.error(err);
-      setCalendarMessage("❌ Error processing syllabus. See console.");
+      setCalendarMessage("Error processing syllabus. See console.");
     }
   }
 
