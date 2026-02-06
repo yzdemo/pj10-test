@@ -76,9 +76,7 @@ function UploadPageContent() {
       }
 
       const { csvText } = await res.json();
-      
-      console.log(csvText)
-      
+            
       const eventsFromCsv: CalendarEvent[] = csvText
         .split("\n")
         .filter((line) => line.trim() !== "")
